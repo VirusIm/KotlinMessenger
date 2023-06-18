@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="25dp"
+    android:fontFamily="@font/montserrat_regular"
+    android:gravity="center"
+    android:textColor="@color/text"
+    android:textSize="15sp"
+    tools:text="Ім’я користувача видален(а)" />

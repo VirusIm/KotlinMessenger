@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.MessagesListActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/bg_toolbar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="8dp">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btn_back"
+            style="@style/AppButton.Toolbar"
+            android:src="@drawable/ic_arrow_back"
+            android:visibility="gone" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btn_profile"
+            style="@style/AppButton.Toolbar"
+            android:src="@drawable/ic_profile" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btn_new_group"
+            style="@style/AppButton.Toolbar"
+            android:src="@drawable/ic_create_group" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btn_new_message"
+            style="@style/AppButton.Toolbar"
+            android:src="@drawable/ic_new_message" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btn_exit"
+            style="@style/AppButton.Toolbar"
+            android:src="@drawable/ic_exit" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btn_delete"
+            style="@style/AppButton.Toolbar"
+            android:src="@drawable/ic_delete"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_chats_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_main"
+        android:clipToPadding="false"
+        android:paddingVertical="12dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/chat_list_item" />
+
+</LinearLayout>

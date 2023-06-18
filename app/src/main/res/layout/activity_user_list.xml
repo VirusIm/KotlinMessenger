@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.UserListActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/bg_toolbar"
+        android:orientation="horizontal"
+        android:paddingHorizontal="8dp">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btn_back"
+            style="@style/AppButton.Toolbar"
+            android:src="@drawable/ic_arrow_back" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/toolbar_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:ellipsize="end"
+            android:focusableInTouchMode="false"
+            android:fontFamily="@font/montserrat_regular"
+            android:gravity="center"
+            android:hint="@string/enter_group_name"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="@string/pick_a_user"
+            android:textColor="@color/text"
+            android:textColorHint="@color/text"
+            android:textSize="15sp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/text_field_search"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/montserrat_regular"
+            android:gravity="center_vertical"
+            android:hint="@string/search_hint"
+            android:singleLine="true"
+            android:textColor="@color/text"
+            android:textColorHint="@color/text"
+            android:visibility="gone" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/picture"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerCrop"
+            android:src="@color/placeholder"
+            android:visibility="gone" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btn_add"
+            style="@style/AppButton.Toolbar"
+            android:src="@drawable/ic_add"
+            android:visibility="gone" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btn_delete"
+            style="@style/AppButton.Toolbar"
+            android:src="@drawable/ic_delete"
+            android:visibility="gone" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btn_search"
+            style="@style/AppButton.Toolbar"
+            android:src="@drawable/ic_search" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btn_done"
+            style="@style/AppButton.Toolbar"
+            android:src="@drawable/ic_done"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_users_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_main"
+        android:clipToPadding="false"
+        android:paddingVertical="16dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/user_list_item" />
+
+</LinearLayout>

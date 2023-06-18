@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "820484825096",
+    "firebase_url": "https://kotlinmessenger-f608b-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "kotlinmessenger-f608b",
+    "storage_bucket": "kotlinmessenger-f608b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:820484825096:android:89de1bbdaf50d4683c31bd",
+        "android_client_info": {
+          "package_name": "com.letsbuildthatapp.kotlinmessenger"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlMPAVqz7FZRLft1FVItWKyKJYrW_s-dc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

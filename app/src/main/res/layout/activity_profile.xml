@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.ProfileActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/bg_toolbar"
+        android:paddingHorizontal="8dp">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btn_back"
+            style="@style/AppButton.Toolbar"
+            android:src="@drawable/ic_arrow_back" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="60dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/montserrat_regular"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textColor="@color/text"
+            android:textSize="15sp"
+            tools:text="Профіль  Ім’я користувача" />
+
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_main"
+        tools:context=".ui.SignUpActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btn_choose_photo"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:foreground="?selectableItemBackgroundBorderless"
+                app:cardBackgroundColor="@color/button"
+                app:cardCornerRadius="75dp"
+                app:cardElevation="0dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/chosen_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text_pick_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:gravity="center"
+                    android:text="@string/choose_photo"
+                    android:textColor="@color/on_button"
+                    android:textSize="20sp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/text_field_username"
+                style="@style/AppTextField"
+                android:layout_marginTop="50dp"
+                android:hint="@string/username"
+                android:inputType="textPersonName" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/text_field_email"
+                style="@style/AppTextField"
+                android:layout_marginTop="10dp"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/text_field_phone_number"
+                style="@style/AppTextField"
+                android:layout_marginTop="10dp"
+                android:hint="@string/phone_number"
+                android:inputType="phone" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/text_field_current_password"
+                style="@style/AppTextField"
+                android:layout_marginTop="10dp"
+                android:hint="@string/current_password"
+                android:inputType="textPassword" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/text_field_new_password"
+                style="@style/AppTextField"
+                android:layout_marginTop="10dp"
+                android:hint="@string/change_password"
+                android:inputType="textPassword" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/text_field_confirm_password"
+                style="@style/AppTextField"
+                android:layout_marginTop="10dp"
+                android:hint="@string/confirm_password"
+                android:inputType="textPassword" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_save"
+                style="@style/AppButton"
+                android:layout_marginTop="20dp"
+                android:text="@string/save" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

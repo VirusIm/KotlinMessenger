@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">KotlinMessenger</string>
+
+    <string name="choose_photo">Оберіть\nфото</string>
+    <string name="username">Ім’я користувача</string>
+    <string name="email">Пошта</string>
+    <string name="password">Пароль</string>
+    <string name="sign_up">Реєстрація</string>
+    <string name="already_have_account">Вже маєте обліковий запис?</string>
+    <string name="enter_email">Введіть адресу електронної пошти</string>
+    <string name="enter_username">Введіть ім\'я користувача</string>
+    <string name="enter_password">Введіть пароль</string>
+    <string name="choose_a_photo">Виберіть фото</string>
+    <string name="sign_in">Вхід</string>
+    <string name="go_to_registration">До реєстрації</string>
+    <string name="attachment">Вкладення</string>
+    <string name="enter_message">Ваше повідомлення</string>
+    <string name="edited">змін.</string>
+    <string name="pick_a_user">Обрати користувача</string>
+    <string name="search_hint">Шукаю...</string>
+    <string name="phone_number">Номер телефону користувача</string>
+    <string name="save">Збереження</string>
+    <string name="change_password">Змінити пароль</string>
+    <string name="confirm_password">Введіть повторно пароль</string>
+    <string name="current_password">Поточний пароль</string>
+    <string name="file_is_too_big">Файл завеликий</string>
+    <string name="enter_group_name">Введіть назву групи...</string>
+    <string name="user_removed">%s видален(а)</string>
+    <string name="user_added">%s додан(а)</string>
+    <string name="passwords_do_not_match">Паролі не співпадають</string>
+</resources>

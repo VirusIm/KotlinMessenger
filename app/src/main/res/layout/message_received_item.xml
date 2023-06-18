@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:background="@color/bg_main">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/picture"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="7dp"
+        android:scaleType="centerCrop"
+        android:src="@color/placeholder"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/message_bubble"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintLeft_toRightOf="@id/picture"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_max="wrap"
+        app:layout_constraintWidth_percent=".5">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_message"
+            android:fontFamily="@font/montserrat_regular"
+            android:textColor="@color/text"
+            android:textSize="12sp"
+            tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tortor neque, pretium a" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/attachment"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_message" />
+
+    </FrameLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/edited"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="@string/edited"
+        android:textColor="@color/text"
+        android:textSize="7sp"
+        android:visibility="gone"
+        app:layout_constraintRight_toLeftOf="@id/message_bubble"
+        app:layout_constraintTop_toBottomOf="@id/picture" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
